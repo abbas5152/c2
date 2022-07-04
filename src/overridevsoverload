@@ -1,0 +1,45 @@
+Q2) Explain the difference between overloading and overriding methods with an example?
+A2) In overloading method name is same but parameters are always different while in overriding method name and parameter
+also same.
+in overloading it may need or don't need inheritance.but in overriding inheritance is needed to it can take property from
+their super class
+overloading is static polymorphism and overriding is dynamic polymorphism.
+overloading method runs at a runtime while overriding method run at a compile time.
+ex-for overload
+1) public class sum{
+     int add(int a,int b){
+     return a+b
+     }
+     int add(int a,int b,int c){
+          return a+b+c
+          }
+          public static void main(String[] args) {
+            System.out.println(add(5,6); //execute first add method
+            System.out.println(add(2,3,4)); //execute second add method
+          }
+}
+ex- for over ride
+
+2) class animal{
+  void eat(){
+    System.out.println("animal super class);
+}
+}
+class lion extends animal{
+   public static void main(String[] args) {
+     lion l1=new lion();
+     l1.eat();
+     //it will gives output as "animal super class"
+   }
+}
+class lion extends animal{
+     void eat(){
+     System.out.println("lion class inside animal")
+     }
+   public static void main(String[] args) {
+
+     lion l1=new lion();
+     l1.eat();
+     //it will gives output as "lion class inside animal"
+   }
+}
